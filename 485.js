@@ -22,7 +22,7 @@ client.setID(1);
         //.then(console.log);
 //}
 setInterval(function() {
-    client.readHoldingRegisters(0, 1, function(err, data) {
+    client.readHoldingRegisters(5, 1, function(err, data) {
         console.log(data.data);
     });
 }, 1000);
