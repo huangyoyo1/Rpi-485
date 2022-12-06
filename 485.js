@@ -23,6 +23,6 @@ client.setID(1);
 //}
 setInterval(function() {
     client.readHoldingRegisters(5, 1, function(err, data) {
-        console.log(data.data);
+        console.log("瞬間流量",data.data,"L/min");
     });
-}, 1000);
+}, 5000);
